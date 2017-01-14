@@ -1,0 +1,202 @@
+янв 14, 2017 10:19:56 PM sun.net.httpserver.ServerImpl <init>
+CONFIG: HttpServer created http null
+янв 14, 2017 10:19:56 PM sun.net.httpserver.ServerImpl createContext
+CONFIG: context created: /
+янв 14, 2017 10:20:00 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Got the following HttpRequest : /me
+янв 14, 2017 10:20:00 PM sun.net.httpserver.ServerImpl logReply
+FINE: GET /me HTTP/1.1 [200  OK] ()
+янв 14, 2017 10:20:02 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Got the following HttpRequest : /authorize
+янв 14, 2017 10:20:02 PM bmstu.vypendrezh.http.handler.SimpleVKHandler parseBodyParams
+INFO: Number of bytes read is -1
+янв 14, 2017 10:20:02 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Should go with POST to VK !!! : {}
+янв 14, 2017 10:20:02 PM sun.net.httpserver.ServerImpl logReply
+FINE: POST /authorize HTTP/1.1 [200  OK] ()
+янв 14, 2017 10:20:06 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Got the following HttpRequest : /code?code=9055581ffa9e5c9aae
+янв 14, 2017 10:20:06 PM sun.net.httpserver.ServerImpl logReply
+FINE: GET /code?code=9055581ffa9e5c9aae HTTP/1.1 [200  OK] ()
+янв 14, 2017 10:20:06 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Got the following HttpRequest : /authorize
+янв 14, 2017 10:20:06 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Should go with POST to VK !!! : {}
+янв 14, 2017 10:20:07 PM org.apache.http.impl.conn.SingleClientConnManager getConnection
+FINE: Get connection for route HttpRoute[{s}->https://oauth.vk.com]
+янв 14, 2017 10:20:07 PM org.apache.http.impl.conn.DefaultClientConnectionOperator openConnection
+FINE: Connecting to oauth.vk.com/87.240.165.86:443
+янв 14, 2017 10:20:08 PM org.apache.http.client.protocol.RequestAddCookies process
+FINE: CookieSpec selected: best-match
+янв 14, 2017 10:20:08 PM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+FINE: Attempt 1 to execute request
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: Sending request: POST /access_token?client_id=5822314&client_secret=3KRJcbrbynVzH6mvaBQV&redirect_uri=http://localhost:1234/code&code=9055581ffa9e5c9aae HTTP/1.1
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "POST /access_token?client_id=5822314&client_secret=3KRJcbrbynVzH6mvaBQV&redirect_uri=http://localhost:1234/code&code=9055581ffa9e5c9aae HTTP/1.1[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "Content-Length: 0[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "Host: oauth.vk.com[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "Connection: Keep-Alive[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "User-Agent: Apache-HttpClient/4.1 (java 1.5)[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> POST /access_token?client_id=5822314&client_secret=3KRJcbrbynVzH6mvaBQV&redirect_uri=http://localhost:1234/code&code=9055581ffa9e5c9aae HTTP/1.1
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> Content-Length: 0
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> Host: oauth.vk.com
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> Connection: Keep-Alive
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> User-Agent: Apache-HttpClient/4.1 (java 1.5)
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "HTTP/1.1 200 OK[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Server: Apache[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Date: Sat, 14 Jan 2017 19:20:10 GMT[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Content-Type: application/json; charset=utf-8[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Content-Length: 142[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Connection: keep-alive[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "X-Powered-By: PHP/3.9507[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Set-Cookie: remixlang=0; expires=Tue, 16 Jan 2018 19:14:13 GMT; path=/; domain=.vk.com[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Pragma: no-cache[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Cache-control: no-store[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "[\r][\n]"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: Receiving response: HTTP/1.1 200 OK
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << HTTP/1.1 200 OK
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Server: Apache
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Date: Sat, 14 Jan 2017 19:20:10 GMT
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Content-Type: application/json; charset=utf-8
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Content-Length: 142
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Connection: keep-alive
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << X-Powered-By: PHP/3.9507
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Set-Cookie: remixlang=0; expires=Tue, 16 Jan 2018 19:14:13 GMT; path=/; domain=.vk.com
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Pragma: no-cache
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Cache-control: no-store
+янв 14, 2017 10:20:08 PM org.apache.http.client.protocol.ResponseProcessCookies processCookies
+FINE: Cookie accepted: "[version: 0][name: remixlang][value: 0][domain: .vk.com][path: /][expiry: Tue Jan 16 22:14:13 MSK 2018]". 
+янв 14, 2017 10:20:08 PM org.apache.http.impl.client.DefaultRequestDirector execute
+FINE: Connection can be kept alive indefinitely
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.Wire wire
+FINE: << "{"access_token":"721a747f800999f98011b85ccef778c8f7e55f2a511977ef9163718071d0f1ce981f8451cebc272bb25e2","expires_in":86398,"user_id":31811130}"
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.SingleClientConnManager releaseConnection
+FINE: Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@46012c96
+янв 14, 2017 10:20:08 PM sun.net.httpserver.ServerImpl logReply
+FINE: GET /authorize HTTP/1.1 [200  OK] ()
+янв 14, 2017 10:20:08 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Got the following HttpRequest : /authorize
+янв 14, 2017 10:20:08 PM bmstu.vypendrezh.http.handler.SimpleVKHandler handle
+FINE: Should go with POST to VK !!! : {}
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.SingleClientConnManager getConnection
+FINE: Get connection for route HttpRoute[{s}->https://api.vk.com]
+янв 14, 2017 10:20:08 PM org.apache.http.impl.conn.DefaultClientConnectionOperator openConnection
+FINE: Connecting to api.vk.com/95.213.11.139:443
+янв 14, 2017 10:20:09 PM org.apache.http.client.protocol.RequestAddCookies process
+FINE: CookieSpec selected: best-match
+янв 14, 2017 10:20:09 PM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+FINE: Attempt 1 to execute request
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: Sending request: POST /method/friends.getOnline?user_id=31811130&access_token=721a747f800999f98011b85ccef778c8f7e55f2a511977ef9163718071d0f1ce981f8451cebc272bb25e2 HTTP/1.1
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "POST /method/friends.getOnline?user_id=31811130&access_token=721a747f800999f98011b85ccef778c8f7e55f2a511977ef9163718071d0f1ce981f8451cebc272bb25e2 HTTP/1.1[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "Content-Length: 0[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "Host: api.vk.com[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "Connection: Keep-Alive[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "User-Agent: Apache-HttpClient/4.1 (java 1.5)[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: >> "[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> POST /method/friends.getOnline?user_id=31811130&access_token=721a747f800999f98011b85ccef778c8f7e55f2a511977ef9163718071d0f1ce981f8451cebc272bb25e2 HTTP/1.1
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> Content-Length: 0
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> Host: api.vk.com
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> Connection: Keep-Alive
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection sendRequestHeader
+FINE: >> User-Agent: Apache-HttpClient/4.1 (java 1.5)
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "HTTP/1.1 200 OK[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Server: Apache[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Date: Sat, 14 Jan 2017 19:20:10 GMT[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Content-Type: application/json; charset=utf-8[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Content-Length: 351[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Connection: keep-alive[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "X-Powered-By: PHP/3.9507[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Set-Cookie: remixlang=0; expires=Fri, 19 Jan 2018 22:41:44 GMT; path=/; domain=.vk.com[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Pragma: no-cache[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "Cache-control: no-store[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "[\r][\n]"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: Receiving response: HTTP/1.1 200 OK
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << HTTP/1.1 200 OK
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Server: Apache
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Date: Sat, 14 Jan 2017 19:20:10 GMT
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Content-Type: application/json; charset=utf-8
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Content-Length: 351
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Connection: keep-alive
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << X-Powered-By: PHP/3.9507
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Set-Cookie: remixlang=0; expires=Fri, 19 Jan 2018 22:41:44 GMT; path=/; domain=.vk.com
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Pragma: no-cache
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.DefaultClientConnection receiveResponseHeader
+FINE: << Cache-control: no-store
+янв 14, 2017 10:20:09 PM org.apache.http.client.protocol.ResponseProcessCookies processCookies
+FINE: Cookie accepted: "[version: 0][name: remixlang][value: 0][domain: .vk.com][path: /][expiry: Sat Jan 20 01:41:44 MSK 2018]". 
+янв 14, 2017 10:20:09 PM org.apache.http.impl.client.DefaultRequestDirector execute
+FINE: Connection can be kept alive indefinitely
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.Wire wire
+FINE: << "{"response":[8538029,12397758,12837018,16174235,17831838,18766736,23335608,25356436,25567091,29635267,30403797,38145350,45494206,47330895,47542304,47927076,59993878,63686192,67024838,85177984,90556471,95180397,112602523,113906618,118424572,123791247,139453438,180002273,220699348,224212961,238472011,264815777,288568582,363213894,363510483,390576109]}"
+янв 14, 2017 10:20:09 PM org.apache.http.impl.conn.SingleClientConnManager releaseConnection
+FINE: Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@460e3e1a
+янв 14, 2017 10:20:09 PM sun.net.httpserver.ServerImpl logReply
+FINE: GET /authorize HTTP/1.1 [200  OK] ()
+янв 14, 2017 10:20:36 PM sun.net.httpserver.HttpConnection close
+FINEST: Closing connection: java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:1234 remote=/0:0:0:0:0:0:0:1:60829]
